@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/georgiakes/isoxpressor/master/assets/schema_input.json",
+    "$id": "https://raw.githubusercontent.com/georgiakes/isoxpressor/main/assets/schema_input.json",
     "title": "georgiakes/isoxpressor pipeline - params.input schema",
     "description": "Schema for the file provided with params.input",
     "type": "array",
@@ -12,6 +12,18 @@
                 "pattern": "^\\S+$",
                 "errorMessage": "Sample name must be provided and cannot contain spaces",
                 "meta": ["id"]
+            },
+            "condition_code": {
+                "type": "integer",
+                "errorMessage": "Condition code must be provided and connot contain spaces",
+                "meta": ["code"]
+            },
+            "condition_name":{
+                "type": "string",
+                "pattern": "^\\S+$",
+                "errorMessage": "Condition name must be provided",
+                "meta": ["cond_name"]
+
             },
             "fastq_1": {
                 "type": "string",
@@ -28,6 +40,6 @@
                 "errorMessage": "FastQ file for reads 2 cannot contain spaces and must have extension '.fq.gz' or '.fastq.gz'"
             }
         },
-        "required": ["sample", "fastq_1"]
+        "required": ["sample","condition_code","condition_name","fastq_1"]
     }
 }
