@@ -2,8 +2,7 @@
 
 ## Introduction
 
-**georgiakes/isoxpressor** is a bioinformatics pipeline that ...
-
+**georgiakes/isoxpressor** is an updated Nextflow version of the tool [IsoXpressor](https://pmc.ncbi.nlm.nih.gov/articles/PMC7523728/). It uses a Docker image of the tool as provided [here](https://github.com/irliampa/IsoXpressor_docker). This updated pipeline also replaces the original REAL aligner with the more widely used and actively maintained STAR aligner for improved performance and compatibility.
 <!-- TODO nf-core:
    Complete this sentence with a 2-3 sentence summary of what types of data the pipeline ingests, a brief overview of the
    major pipeline sections and the types of output it produces. You're giving an overview to someone new
@@ -12,7 +11,8 @@
 
 <!-- TODO nf-core: Include a figure that guides the user through the major workflow steps. Many nf-core
      workflows use the "tube map" design for that. See https://nf-co.re/docs/contributing/design_guidelines#examples for examples.   -->
-<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline -->1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+<!-- TODO nf-core: Fill in short bullet-pointed list of the default steps in the pipeline 1. Read QC ([`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))2. Present QC for raw reads ([`MultiQC`](http://multiqc.info/))
+-->
 
 ## Usage
 
